@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 292px 1fr;
+  gap: 35px;
+}
+
+aside {
+  background: white;
+  height: calc(100vh - 32px);
+  position: -webkit-sticky;
+  position: sticky;
+  border-radius: 10px;
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1098039216);
+  top: 16px;
+  margin-left: 16px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside img {
+  margin-top: 44px;
+}
+aside nav {
+  margin-top: 44px;
+  justify-self: stretch;
+}
+aside nav ul {
+  width: 224px;
+  list-style: none;
+}
+aside nav ul li {
+  width: 100%;
+}
+aside nav ul li:nth-of-type(1) a.active, aside nav ul li:nth-of-type(1) a:hover {
+  background: rgba(119, 100, 228, 0.2274509804);
+  color: #7764e4;
+}
+aside nav ul li:nth-of-type(2) a.active, aside nav ul li:nth-of-type(2) a:hover {
+  background: rgba(246, 98, 119, 0.2274509804);
+  color: #f66277;
+}
+aside nav ul li:nth-of-type(3) a.active, aside nav ul li:nth-of-type(3) a:hover {
+  background: rgba(22, 188, 132, 0.2274509804);
+  color: #16bc84;
+}
+aside nav ul li:nth-of-type(4) a.active, aside nav ul li:nth-of-type(4) a:hover {
+  background: rgba(64, 215, 242, 0.2274509804);
+  color: #40d7f2;
+}
+aside nav ul li:nth-of-type(5) a.active, aside nav ul li:nth-of-type(5) a:hover {
+  background: rgba(251, 105, 71, 0.2274509804);
+  color: #fb6947;
+}
+aside nav ul li:nth-of-type(6) a.active, aside nav ul li:nth-of-type(6) a:hover {
+  background: rgba(236, 162, 101, 0.2274509804);
+  color: #eca265;
+}
+aside nav ul li a {
+  font-size: 14px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  padding: 20px;
+  color: #172b4d;
+  margin-top: 1px;
+  transition: 0.3s ease-in-out;
+}
+aside nav ul li a span {
+  margin-left: 10px;
+}
+
+main {
+  margin-right: 16px;
+}
+main header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 16px;
+  padding: 10px 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1098039216);
+  margin-top: 16px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main header h2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #7764e4;
+}
+main header .info {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+main header .info a {
+  text-decoration: none;
+  color: #018e9f;
+}
+main header .info .doctor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main header .info .doctor span {
+  font-size: 13px;
+}
+main .content .stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+main .content .stats .state-item {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 10px;
+  background: white;
+}
+main .content .stats .state-item .state-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .content .stats .state-item .state-info .state-title {
+  font-size: 11px;
+  color: #8898aa;
+}
+main .content .stats .state-item .state-info h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4d4f5c;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+main .content .stats .state-item .state-info .icon-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+main .content .stats .state-item .state-info .icon-box.new-patients {
+  background: #16bc84;
+}
+main .content .stats .state-item .state-info .icon-box.new-visits {
+  background: #e54d5b;
+}
+main .content .stats .state-item .state-info .icon-box.total-patients {
+  background: #7764e4;
+}
+main .content .stats .state-item .state-info .icon-box.total-visits {
+  background: #11cdef;
+}
+main .content .stats .state-item .state-footer {
+  font-size: 13px;
+  color: #4d4f5c;
+}
+main .content .stats .state-item .state-footer span {
+  margin-right: 4px;
+  color: #16bc84;
+}
+main .content .stats .state-item .state-footer span.minus {
+  color: #e54d5b;
+}
+main .content .charts {
+  margin-top: 24px;
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
