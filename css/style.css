@@ -122,6 +122,9 @@ main header .info .doctor {
 main header .info .doctor span {
   font-size: 13px;
 }
+main .content {
+  margin-bottom: 16px;
+}
 main .content .stats {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -192,6 +195,9 @@ main .content .charts .chart-item {
   background: white;
   padding: 16px;
   border-radius: 10px;
+}
+main .content .charts .chart-item .canvasjs-chart-credit {
+  display: none;
 }
 main .content .charts .chart-item .chart-item-header {
   display: flex;
